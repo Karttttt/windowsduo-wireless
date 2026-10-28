@@ -1,5 +1,11 @@
 # WindowsDuo
 
+> **本仓库是一次复刻**，基于 [KaedeharaKazuha1029/WindowsDuo](https://github.com/KaedeharaKazuha1029/WindowsDuo)（MIT）。
+>
+> 复刻内容：主控由 ESP32 换成 **STM32F103C8T6（Blue Pill）**，并新增 **ESP8266 串口 WiFi 透传**——
+> 原版只能拖 USB 串口线，现在可以做到转轴处零线缆、100Hz 无线回传。
+> 逆投影着色器与互补滤波算法沿用原项目，改动清单见下方「与 ESP32 原版的差异」。
+
 在 Windows / macOS 笔记本上复刻 **iPhone Duo 折叠屏的「悬浮玻璃」效果**：屏幕开合时，桌面内容像隔着一层绕铰链旋转的玻璃——开合角度越大，内容越模糊、越暗，视线出界处渐变为纯黑。
 
 ![demo](win/smoke_widget.png)
