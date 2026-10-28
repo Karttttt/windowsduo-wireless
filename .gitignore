@@ -1,0 +1,24 @@
+# 工作区/缓存
+.workbuddy/
+__pycache__/
+
+# ESP-IDF 构建产物 (120MB)
+esp32/mpu6050_angle/build/
+
+# PlatformIO 构建产物
+stm32/**/.pio/
+stm32/**/.pio/
+.platformio/
+
+# 调试日志与临时输出
+dbg*.txt
+*.log
+*_log.txt
+*_exit.txt
+win/smoke_frame.png
+win/smoke_grab.png
+win/smoke_*.png
+win/looks/
+
+# 固件私密配置（WiFi 名/密码，模板见 secrets.example.h）
+stm32/esp8266_bridge/src/secrets.h

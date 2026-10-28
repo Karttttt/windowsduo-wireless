@@ -1,0 +1,16 @@
+{
+  "port": "COM3",
+  "tcp": "auto",
+  "baud": 115200,
+  "axis": "a",
+  "angle_closed": 88.0,
+  "angle_open": 30.0,
+  "glass_start": 0.05,
+  "refresh_hz": 3,
+  "max_tilt_deg": 66.0,
+  "eye_dist_h": 1.9,
+  "blur_spread": 0.30,
+  "darkening": 0.0003,
+  "max_taps": 32,
+  "lock_at_close": false
+}
