@@ -35,6 +35,15 @@ The model is derived from several open-source re-creations (DuoLikeAnimation / i
 MacDuo / FrostFold) and re-implemented for the laptop case, where the hinge is the bottom edge of
 the screen.
 
+## How it looks across the range
+
+![effect-stages](docs/effect-stages.png)
+
+Offscreen renders of the same shader at 0 / 25 / 50 / 75 / 100 % concentration, on a synthetic test
+card (no desktop content involved). Concentration is a linear map of the lid angle: the closer to
+fully closed, the more the content sinks behind a tilted pane of glass, darkens, and finally turns
+black where the line of sight leaves the content plane. Regenerate with `win/looksheet.py`.
+
 ## Variants
 
 | Variant | Platform | Lid-angle source | Hardware |
@@ -58,6 +67,7 @@ win/                      Windows host
   config.json             All runtime parameters
   offscreen_test.py       Render the shader offscreen to a PNG
   lookdev.py              Render the real desktop at arbitrary parameters (no full-screen flash)
+  looksheet.py            Render docs/effect-stages.png on a synthetic test card
   calibrate.py            Two-pose calibration -> angle_closed / angle_open
   fix_ch340.bat           Repair a CH340 COM-port collision (device problem code 31)
   run_overlay.bat         Serial mode   /  run_wifi.bat   Wireless mode

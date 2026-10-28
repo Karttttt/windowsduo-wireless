@@ -23,6 +23,14 @@
 
 理论模型参考自多个开源复刻（DuoLikeAnimation / iphone-duo / MacDuo / FrostFold），按笔记本场景（铰链 = 屏幕底边）重新实现。
 
+## 不同浓度的观感
+
+![effect-stages](docs/effect-stages.png)
+
+同一套着色器在 0% / 25% / 50% / 75% / 100% 浓度下的离屏渲染（合成测试图，不含任何桌面内容）。
+浓度由开合角线性映射；越接近合盖，内容越像隔着一块斜玻璃塌陷、变暗，视线出界处转为纯黑。
+想用自己的参数重出这张图：`win/looksheet.py`。
+
 ## 四个版本
 
 | 版本 | 平台 | 开合角度来源 | 硬件要求 |
@@ -53,6 +61,7 @@ win/                      Windows 端主程序
   config.json             运行参数
   offscreen_test.py       着色器离屏验证
   lookdev.py              用真实桌面离屏试参数 (出 win/looks/*.png)
+  looksheet.py            用合成测试图生成 docs/effect-stages.png 效果对比图
   calibrate.py            两点标定: 合盖/全开角度写回 config.json
   fix_ch340.bat           CH340 串口被蓝牙占号(代码 31)时的修复脚本
   run_overlay.bat         串口驱动启动   /  run_wifi.bat  无线启动
