@@ -1,5 +1,7 @@
 # WindowsDuo
 
+**中文 | [English](README.en.md)**
+
 > **本仓库是一次复刻**，基于 [KaedeharaKazuha1029/WindowsDuo](https://github.com/KaedeharaKazuha1029/WindowsDuo)（MIT）。
 >
 > 复刻内容：主控由 ESP32 换成 **STM32F103C8T6（Blue Pill）**，并新增 **ESP8266 串口 WiFi 透传**——
